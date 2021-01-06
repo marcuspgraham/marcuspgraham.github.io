@@ -1,0 +1,322 @@
+
+/* ================================= 
+  Body
+==================================== */
+
+body {
+    background-color: #fffc52;
+}
+
+.navbar-brand {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-item {
+    font-family: itc-avant-garde-gothic-pro, sans-serif; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-toggler {
+  margin-bottom: 3px;
+}
+
+
+h1 {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 80px;
+    color: #000;
+}
+
+h3 {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 100px;
+    color: #000;
+}
+
+.bio {
+  justify-content: center;
+  background-color: #000;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.treehouse {
+  display: flex;
+  justify-content: center;
+}
+
+.copy {
+  margin-left: 50px;
+  margin-right:  50px;
+  text-align: center;
+  color: #f1a638;
+}
+
+.bio-header {
+  font-size: 5rem;
+  margin-bottom: 70px;
+  padding-top: 30px;
+}
+
+.about {
+  color: #fff;
+  font-family: itc-avant-garde-gothic-pro, sans-serif; 
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.card-body {
+    background-color: #fffc52;
+}
+
+.brief {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+p {
+    font-family: itc-avant-garde-gothic-pro, sans-serif; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem; 
+    text-align: left;
+}
+
+
+svg {
+    float: right;
+    margin-left: 15px;
+    color: #000;
+}
+
+/* ================================= 
+  Text Bounce Effect
+==================================== */
+
+.a {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  display: inline-block;
+  cursor: pointer;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -25px;
+}
+
+#space {
+  margin-left: 25px;
+}
+
+.a:hover {
+  color: #f1a638;
+  /* animation: rubberBand 5s infinite; */
+  animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+} 
+
+
+/* ================================= 
+  Image Effects
+==================================== */
+
+.contain {
+    position: relative;
+  }
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .contain:hover .image {
+    opacity: 0.3;
+  }
+  
+  .contain:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;  
+    color: black;
+    padding: 5px;
+  }
+
+
+/* ================================= 
+  Footer
+==================================== */
+
+
+footer {
+  background: #000;
+  padding: 90px 0;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-name {
+  text-align: center;
+  color: #f1a638;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.left-col {
+  margin: auto;
+}
+
+a {
+  color: #000;
+}
+
+a svg {
+  float: none;
+}
+
+svg:hover {
+  filter: invert(35%) sepia(80%) 
+          saturate(2878%) 
+          hue-rotate(346deg) 
+          brightness(104%) 
+          contrast(97%);
+}
+
+.email {
+  text-decoration: none;
+  color: #f1a638;
+  font-weight: 500;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.email:hover {
+  color: #fffc52;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 576px) {
+   
+  .text {
+    padding-bottom: 120px;
+  }
+
+  .a {
+    font-size: 6.5rem;
+    line-height: normal;
+  }
+  
+}
+
+@media (min-width: 768px) {
+   
+  .text {
+    padding-top: 90px;
+  }
+
+  .a {
+    font-size: 8rem;
+    line-height: normal;
+  }
+  
+}
+
+@media (min-width: 992px) {
+   
+  .text {
+    padding-top: 90px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+   
+  .text {
+    padding-top: 200px;
+  }
+  
+}
